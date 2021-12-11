@@ -1,33 +1,12 @@
-# imagemin plugin for [Hexo](https://hexo.io)
+# hexo-imagemin-modern for [Hexo](https://hexo.io)
 > Minify images with [imagemin](https://github.com/imagemin/imagemin).
 
 ## Install
 ```bash
-$ npm install hexo-imagemin --save
+$ npm install hexo-imagemin-modern
 ```
 
-## Options
-You can configure this plugin in `_config.yml`.
-
-```yaml
-imagemin:
-  enable     : true
-  interlaced : false
-  multipass  : false
-  optimizationLevel: 2
-  pngquant   : false
-  progressive: false
-```
-
-- **enable** - Enable the plugin. Defaults to `true`.
-- **interlaced** - Interlace gif for progressive rendering. Defaults to `false`.
-- **multipass** - Optimize svg multiple times until it’s fully optimized. Defaults to `false`.
-- **optimizationLevel** - Select an optimization level between 0 and 7. Defaults to `2`.
-- **pngquant** - Enable [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant) plugin. Defaults to `false`.
-- **progressive** - Lossless conversion to progressive. Defaults to `false`.
-
-## Debugging
-Launch the node process like `DEBUG=hexo:imagemin hexo ...` to inspect debug messages.
+No configuration is required.
 
 ## Changelog
 See the [Changelog](./CHANGELOG.md) for a list of changes.
@@ -35,7 +14,7 @@ See the [Changelog](./CHANGELOG.md) for a list of changes.
 ## License
     The MIT License (MIT)
 
-    Copyright (c) 2015 Mark van Seventer
+    Copyright (c) 2015 Mark van Seventer, Tim Daubenschütz
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal

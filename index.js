@@ -1,7 +1,7 @@
 /**
  * The MIT License (MIT)
  *
- * Copyright (c) 2015 Mark van Seventer
+ * Copyright (c) 2015 Mark van Seventer, Tim Daubenschütz
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,26 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
-**/
+ **/
 
-// Strict mode.
-'use strict';
-
-// Package modules.
-var assign = require('object-assign');
-
-// Local modules.
-var filter = require('./lib/filter.js');
-
-// Configure.
-hexo.config.imagemin = assign({
-  enabled    : true,
-  interlaced : false,
-  multipass  : false,
-  optimizationLevel: 2,
-  pngquant    : false,
-  progressive : false
-}, hexo.config.imagemin);
-
-// Register the filter.
-hexo.extend.filter.register('after_generate', filter);
+const filter = require("./lib/filter.js");
+hexo.extend.filter.register("before_generate", filter);

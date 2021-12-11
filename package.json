@@ -1,32 +1,37 @@
 {
-  "name"        : "hexo-imagemin",
-  "version"     : "0.1.1-dev",
-  "description" : "imagemin plugin for Hexo.",
-  "keywords"    : [ "hexo", "hexo-plugin", "hexo-filter", "imagemin", "gif", "jpg", "png", "svg" ],
-  "homepage"    : "https://github.com/vseventer/hexo-imagemin",
-  "bugs"        : "https://github.com/vseventer/hexo-imagemin/issues",
-  "license"     : "MIT",
-  "author"      : "Mark van Seventer <mark@vseventer.com>",
-  "repository"  : { "type": "git", "url": "vseventer/hexo-imagemin" },
-  "main"        : "./index.js",
-  "scripts"     : {
-    "pretest" : "./node_modules/.bin/jshint --reporter=./node_modules/jshint-stylish lib/ test/ *.js",
-    "test"    : "./node_modules/.bin/mocha test/"
+  "name": "hexo-imagemin-modern",
+  "version": "0.0.1",
+  "description": "modern imagemin plugin for Hexo.",
+  "keywords": [
+    "hexo",
+    "hexo-plugin",
+    "hexo-filter",
+    "imagemin",
+    "gif",
+    "jpg",
+    "png",
+    "svg"
+  ],
+  "homepage": "https://github.com/timdaub/hexo-imagemin-modern",
+  "bugs": "https://github.com/timdaub/hexo-imagemin-modern/issues",
+  "license": "MIT",
+  "author": "Mark van Seventer <mark@vseventer.com>, Tim Daubenschütz <tim@daubenschuetz.de>",
+  "repository": {
+    "type": "git",
+    "url": "timdaub/hexo-imagemin-modern"
   },
+  "main": "./index.js",
   "dependencies": {
-    "bluebird"          : "2.9.x",
-    "debug"             : "2.2.x",
-    "imagemin"          : "3.2.x",
-    "imagemin-mozjpeg"  : "5.1.x",
-    "imagemin-pngquant" : "4.1.x",
-    "minimatch"         : "2.0.x",
-    "object-assign"     : "3.0.x",
-    "stream-to-array"   : "2.0.x"
+    "debug": "4.3.3",
+    "imagemin": "7.0.1",
+    "imagemin-gifsicle": "7.0.0",
+    "imagemin-jpegtran": "7.0.0",
+    "imagemin-mozjpeg": "9.0.0",
+    "imagemin-optipng": "8.0.0",
+    "imagemin-pngquant": "9.0.2",
+    "imagemin-svgo": "9.0.0"
   },
-  "devDependencies": {
-    "jshint"         : "2.8.x",
-    "jshint-stylish" : "2.0.x",
-    "mocha"          : "2.2.x"
-  },
-  "engines": { "node" : ">=0.10.x" }
+  "engines": {
+    "node": ">=12.22.7"
+  }
 }
