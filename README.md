@@ -1,12 +1,20 @@
 # hexo-imagemin-modern for [Hexo](https://hexo.io)
 > Minify images with [imagemin](https://github.com/imagemin/imagemin).
 
+**Supported Image Formats:** gif, jpeg, png, svg
+
 ## Install
 ```bash
 $ npm install hexo-imagemin-modern
 ```
 
 No configuration is required.
+
+### Note
+
+- `hexo-imagemin-modern` isn't run when calling `hexo serve` as this would
+  introduce significant lag into debugging. It is, however, run e.g. on
+  deployment with `hexo deploy`.
 
 ## Changelog
 See the [Changelog](./CHANGELOG.md) for a list of changes.
