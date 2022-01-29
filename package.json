@@ -1,6 +1,6 @@
 {
   "name": "hexo-imagemin-modern",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "modern imagemin plugin for Hexo.",
   "keywords": [
     "hexo",
