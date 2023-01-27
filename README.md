@@ -1,3 +1,4 @@
+# Deprecation: 2023-01-27: I stopped using hexo and so this package isn't further maintained. Feel free to fork it and maintain by yourself considering the license.
 # hexo-imagemin-modern for [Hexo](https://hexo.io)
 > Minify images with [imagemin](https://github.com/imagemin/imagemin).
 
